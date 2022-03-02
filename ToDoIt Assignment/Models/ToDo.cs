@@ -1,0 +1,49 @@
+﻿using Person_Assignment.Models;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using ToDoIt_Assignment.Models;
+
+namespace ToDoIt_Assignment.Models 
+{
+   public  class ToDo 
+    {
+        private int id;
+        private string description;
+        private bool done;
+        Person assignee;
+
+        public ToDo (int id, string description)
+        {
+            this.id= id;
+            this.description = description;
+
+        }
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public string  Description
+        {
+            get { return description; }
+            set { description = value; }
+        }
+        public Person Assignee
+        {
+            get { return assignee; }
+            set { assignee = value; }
+        }
+        public bool Done
+        {
+            get { return done ; }
+            set { done  = value; }
+        }
+
+
+
+
+
+
+    }
+}
