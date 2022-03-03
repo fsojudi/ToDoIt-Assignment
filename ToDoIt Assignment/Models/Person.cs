@@ -7,17 +7,25 @@ namespace Person_Assignment.Models
    public class Person
 
     {
-        private int ID;
+        private int id;
         private string firstName;
         private string lastName;
 
-        public Person(int ID, string firstName, string lastName)
+        public Person(int id, string firstName, string lastName)
         {
-            this. ID = ID ;
+            this. id = id ;
+            
             this.firstName = firstName;
             this.lastName = lastName;
 
         }
+
+        public int Id
+        { get { return id; }
+            set { id = (value); }
+
+        }
+
 
         public String Firstname
         { get { return Firstname; }
@@ -26,7 +34,7 @@ namespace Person_Assignment.Models
             {
                 if (string .IsNullOrEmpty (value)) 
                 {
-                    throw new AggregateException("Firstname must contains at least one letter");
+                    throw new ArgumentException ("Firstname must contains at least one letter");
 
                 }
             }
@@ -39,7 +47,7 @@ namespace Person_Assignment.Models
             {
                 if (string .IsNullOrEmpty (value ))
                 {
-                    throw new AggregateException("Lastname  must contains at least one letter");
+                    throw new ArgumentException ("Lastname  must contains at least one letter");
 
                 }
             }

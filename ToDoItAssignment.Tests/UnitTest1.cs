@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace Person.Test
+namespace ToDoItAssignment.Tests
 {
     public class UnitTest1
     {
