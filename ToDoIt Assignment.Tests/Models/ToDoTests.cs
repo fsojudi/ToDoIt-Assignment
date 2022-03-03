@@ -61,7 +61,38 @@ namespace ToDoIt_Assignment.Tests.Models
 
 
         }
-        
+
+        [Fact]
+        public void GoodAssigneeTest()
+        {
+            int id = 1;
+            string firstName = "Fatemeh";
+            string lastName = "Sojudi";
+            string description = "Good";
+            Person GoodAssigneeWorks = new  Person (id,firstName ,lastName );
+            
+            ToDo result = new ToDo(id, description);
+
+            Assert.Equal(GoodAssigneeWorks, result.Assignee);
+
+        }
+        [Fact]
+        public void GoodDoneTest()
+        {
+            int id = 1;
+            String discription = "Good";
+            bool DoneWorks = false ;
+
+            ToDo result = new ToDo(id, discription);
+
+            Assert.Equal(DoneWorks, result.Done);
+
+
+        }
+
+
+
+
 
 
 
