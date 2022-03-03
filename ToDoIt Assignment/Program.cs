@@ -7,7 +7,7 @@ namespace Person_Assignment
     {
         static void Main(string[] args)
         {
-            Person person = new Person( 1,"Alexi", " Alban");
+           
         }
     }
 }

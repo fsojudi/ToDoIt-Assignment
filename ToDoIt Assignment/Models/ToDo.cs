@@ -22,12 +22,22 @@ namespace ToDoIt_Assignment.Models
         public int Id
         {
             get { return id; }
-            set { id = value; }
+            
         }
+       
         public string  Description
         {
             get { return description; }
-            set { description = value; }
+            set { 
+                if (string.IsNullOrWhiteSpace(value ))
+                {
+                    throw new ArgumentException("Discription Can not be empty .");
+                }
+                else
+                { 
+                description = value;
+                }
+            }
         }
         public Person Assignee
         {
