@@ -4,6 +4,10 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>ToDoIt_Assignment</RootNamespace>
+    <StartupObject></StartupObject>
+    <PackageId>ToDoIt_Assignment</PackageId>
+    <Company>ToDoIt_Assignment</Company>
+    <Product>ToDoIt_Assignment</Product>
   </PropertyGroup>
 
 </Project>

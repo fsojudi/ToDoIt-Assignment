@@ -2,26 +2,29 @@
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
-using Person_Assignment.Models;
+using ToDoIt_Assignment.Models;
 
 
-namespace ToDoItAssignment.Tests.Models
+namespace ToDoIt_Assignment.Tests.Models
 {
-     public  class PersonTests
+     public class PersonTests
     {
+
+
         [Fact]
-        public void PersonTest()
+        public void PersonConstructorTest()
         {
-            int ID = 1;
-            string firstname = "Alexi";
-            string lastname = "Albani";
-            Person result = new Person(ID, firstname, lastname);
+            int id = 666;
+            string firstName = "Ola";
+            string lastName = "Svensson";
 
-            Assert.Equal(ID, result.Id);
-            Assert.NotNull(result);
-            Assert.Equal(firstname, result.Firstname);
-            Assert.Equal(lastname, result.Lastname);
+            Person person = new Person(id, firstName, lastName);
 
+
+            Assert.NotNull(person);
+            Assert.Equal(id, person.Id);
+            Assert.Equal(firstName, person.Firstname);
+            Assert.Equal(lastName, person.Lastname);
         }
 
         [Theory]
